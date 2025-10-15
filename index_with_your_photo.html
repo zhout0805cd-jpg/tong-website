@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tong Zhou — Economics & Mathematics</title>
+  <meta name="description" content="Resume website of Tong Zhou (U of T) — Economics & Mathematics, Minor in Statistics. Research & internship profile." />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+      --pill:#f3f4f6;
+      --accent:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:#1d4ed8;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{
+      position:sticky;top:0;z-index:5;
+      backdrop-filter:saturate(180%) blur(8px);
+      background:rgba(255,255,255,.85);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .name{font-weight:700;font-size:18px}
+    .layout{display:grid;grid-template-columns:280px 1fr;gap:24px;margin-top:20px}
+    .card{border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+    .sticky{position:sticky;top:88px}
+    .portrait-wrap{width:100%;text-align:center}
+    .portrait{
+      width:100%;
+      border-radius:14px;
+      object-fit:cover;
+      box-shadow:0 8px 24px rgba(0,0,0,.1);
+    }
+    h1{font-size:34px;line-height:1.2;margin:0 0 8px 0}
+    h2{font-size:22px;margin:24px 0 8px 0}
+    h3{font-size:16px;margin:16px 0 4px 0}
+    .muted{color:var(--muted);font-size:14px}
+    .pill{display:inline-flex;align-items:center;border:1px solid var(--border);border-radius:999px;padding:4px 10px;font-size:12px;margin:2px;background:#fafafa}
+    ul{padding-left:20px;margin:8px 0}
+    .section{margin-top:24px}
+    .columns{columns:2;column-gap:24px}
+    @media (max-width: 900px){.layout{grid-template-columns:1fr}.sticky{position:static}.columns{columns:1}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="name">Tong Zhou</div>
+      <nav style="display:flex;gap:16px;font-size:14px">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="layout">
+      <!-- Left column: portrait + contacts -->
+      <aside class="card sticky">
+        <div class="portrait-wrap">
+          <img class="portrait" src="portrait.jpg" alt="Portrait of Tong Zhou" />
+        </div>
+        <div style="margin-top:12px;font-size:14px;color:var(--text)">
+          <div>📍 Toronto · Global Mobility</div>
+          <div>📧 <a href="mailto:tong.zhou.offer@gmail.com">tong.zhou.offer@gmail.com</a></div>
+          <div>📞 China: (+86)182-8445-0969</div>
+          <div>📞 Canada: (+1)647-717-8624</div>
+        </div>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">
+          <span class="pill">Empirical Research</span>
+          <span class="pill">Quantitative Modeling</span>
+          <span class="pill">Industrial Organization</span>
+          <span class="pill">Data Visualization</span>
+        </div>
+      </aside>
+
+      <!-- Right column -->
+      <section>
+        <h1 id="about">Tong Zhou</h1>
+        <div class="muted">B.A. in Economics & Mathematics (Minor in Statistics), University of Toronto, Class of 2028</div>
+        <div class="section card">
+          <h2>Education</h2>
+          <p><b>University of Toronto</b>, Toronto, Canada<br>
+          Bachelor of Arts in Economics & Mathematics (Minor in Statistics)<br>
+          <span class="muted">Sep 2024 – Jun 2028 (Expected)</span></p>
+        </div>
+
+        <div id="research" class="section card">
+          <h2>Research Experience</h2>
+          <p><b>Research Assistant</b> — Prof. Yao Luo, Department of Economics, University of Toronto<br>
+          <span class="muted">Feb 2025 – May 2025</span></p>
+        </div>
+
+        <div id="experience" class="section card">
+          <h2>Professional Experience</h2>
+          <p><b>CITIC Securities Sichuan Branch</b> — Business Development Department<br>
+          <span class="muted">Jun 2025 – Jul 2025</span></p>
+        </div>
+
+        <div id="skills" class="section card">
+          <h2>Skills</h2>
+          <div class="columns">
+            <div><b>Languages:</b> Mandarin (Native) · English (Fluent) · French (Basic)</div>
+            <div><b>Technical:</b> Excel · Python · R (Basic) · PowerPoint</div>
+          </div>
+        </div>
+
+        <div id="contact" class="section card">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:tong.zhou.offer@gmail.com">tong.zhou.offer@gmail.com</a></p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="container muted" style="padding:30px 0">© <span id="y"></span> Tong Zhou</footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
