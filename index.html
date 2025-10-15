@@ -4,126 +4,128 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tong Zhou — Economics & Mathematics</title>
-  <meta name="description" content="Resume website of Tong Zhou (U of T) — Economics & Mathematics, Minor in Statistics. Research & internship profile." />
+  <meta name="description" content="Tong Zhou — B.A. Economics & Mathematics (Minor in Statistics), University of Toronto, Class of 2028. Research & internship profile." />
+  <meta property="og:title" content="Tong Zhou — Economics & Mathematics" />
+  <meta property="og:description" content="Research-driven, quantitatively strong, execution-focused. Contact for RA / internship opportunities." />
+  <meta property="og:type" content="website" />
   <style>
     :root{
-      --bg:#ffffff;
-      --text:#111827;
-      --muted:#6b7280;
-      --border:#e5e7eb;
-      --pill:#f3f4f6;
-      --accent:#1f2937;
+      --bg:#ffffff; --text:#111827; --muted:#6b7280; --border:#e5e7eb;
+      --pill:#f3f4f6; --accent:#1d4ed8; --card:#ffffff; --shadow:0 1px 3px rgba(0,0,0,.06)
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.6;
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      Roboto, Helvetica, Arial, "PingFang SC","Noto Sans CJK SC","Microsoft YaHei", sans-serif;
+      background:var(--bg); color:var(--text); line-height:1.6;
     }
-    a{color:#1d4ed8;text-decoration:none}
-    a:hover{text-decoration:underline}
+    a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
     .container{max-width:1100px;margin:0 auto;padding:24px}
-    header{
-      position:sticky;top:0;z-index:5;
-      backdrop-filter:saturate(180%) blur(8px);
-      background:rgba(255,255,255,.85);
-      border-bottom:1px solid var(--border);
-    }
+    header{position:sticky;top:0;z-index:5;backdrop-filter:saturate(180%) blur(8px);
+      background:rgba(255,255,255,.9);border-bottom:1px solid var(--border)}
     .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
     .name{font-weight:700;font-size:18px}
     .layout{display:grid;grid-template-columns:280px 1fr;gap:24px;margin-top:20px}
-    .card{border:1px solid var(--border);border-radius:16px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,.04);background:#fff}
+    .card{border:1px solid var(--border);border-radius:16px;padding:16px;background:var(--card);box-shadow:var(--shadow)}
     .sticky{position:sticky;top:88px}
-    .portrait{
-      width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;
-      background:linear-gradient(135deg,#f5f7fb,#eef2f7);display:flex;align-items:center;justify-content:center;
-      color:var(--muted);font-size:14px;border:1px solid var(--border);
-    }
-    h1{font-size:34px;line-height:1.2;margin:0 0 8px 0}
-    h2{font-size:22px;margin:24px 0 8px 0}
-    h3{font-size:16px;margin:16px 0 4px 0}
+    .portrait{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px;border:1px solid var(--border)}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:8px 12px;border-radius:12px;background:#fff;font-size:14px}
+    .btn.primary{border-color:var(--accent); background:#eef2ff}
     .muted{color:var(--muted);font-size:14px}
-    .pill{display:inline-flex;align-items:center;border:1px solid var(--border);border-radius:999px;padding:4px 10px;font-size:12px;margin:2px;background:#fafafa}
-    ul{padding-left:20px;margin:8px 0}
+    .pill{display:inline-flex;align-items:center;border:1px solid var(--border);border-radius:999px;padding:4px 10px;font-size:12px;background:#fafafa;margin:2px}
     .section{margin-top:24px}
+    h1{font-size:34px;line-height:1.2;margin:0 0 8px}
+    h2{font-size:22px;margin:0 0 8px}
+    h3{font-size:16px;margin:12px 0 4px}
+    ul{padding-left:20px;margin:8px 0}
     .columns{columns:2;column-gap:24px}
     .kv{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:14px}
-    table{width:100%;border-collapse:collapse}
-    th,td{border-top:1px solid var(--border);padding:10px 8px;vertical-align:top}
-    th{width:36%;text-align:left;color:#111827;background:#fafafa}
-    .btn{display:inline-block;border:1px solid var(--border);border-radius:12px;padding:8px 12px;font-size:14px;background:#fff}
-    @media (max-width: 900px){.layout{grid-template-columns:1fr}.sticky{position:static}.columns{columns:1}}
+    .bullets{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+    .bullet{border:1px solid var(--border);background:#fafafa;border-radius:12px;padding:10px 12px}
+    @media (max-width: 900px){
+      .layout{grid-template-columns:1fr}
+      .sticky{position:static}
+      .columns{columns:1}
+      .bullets{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
       <div class="name">Tong Zhou</div>
-      <nav style="display:flex;gap:16px;font-size:14px">
+      <nav style="display:flex;gap:12px;font-size:14px;flex-wrap:wrap">
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+        <a href="#fullresume">Full Resume</a>
+        <a href="mailto:tong.zhou.offer@gmail.com" class="btn primary">Email me</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
     <section class="layout">
-      <!-- Left column: portrait + contacts -->
+      <!-- Left: portrait & contact -->
       <aside class="card sticky">
-        <img src="portrait.jpg" alt="Portrait" class="portrait">
-        <div style="margin-top:12px;font-size:14px;color:var(--text)">
+        <img src="portrait.jpg" alt="Portrait of Tong Zhou" class="portrait">
+        <div style="margin-top:12px;font-size:14px">
           <div>📍 Toronto · Global Mobility</div>
           <div>📧 <a href="mailto:tong.zhou.offer@gmail.com">tong.zhou.offer@gmail.com</a></div>
           <div>📞 China: (+86)182-8445-0969</div>
           <div>📞 Canada: (+1)647-717-8624</div>
         </div>
-        <div style="margin-top:12px;display:flex;flex-wrap:wrap;gap:6px">
+        <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
+          <a class="btn primary" href="mailto:tong.zhou.offer@gmail.com">Contact</a>
+          <a class="btn" href="cv.pdf">Download CV (PDF)</a><!-- put your PDF as cv.pdf -->
+          <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div style="margin-top:12px;display:flex;flex-wrap:wrap">
           <span class="pill">Empirical Research</span>
           <span class="pill">Quantitative Modeling</span>
           <span class="pill">Industrial Organization</span>
           <span class="pill">Data Visualization</span>
         </div>
-        <div style="margin-top:12px">
-          <span class="muted">LinkedIn (coming soon)</span>
-        </div>
       </aside>
 
-      <!-- Right column: content -->
+      <!-- Right: content -->
       <section>
         <h1 id="about">Tong Zhou</h1>
         <div class="muted">B.A. in Economics & Mathematics (Minor in Statistics), University of Toronto, Class of 2028</div>
+
+        <!-- Top selling points -->
+        <div class="section bullets">
+          <div class="bullet"><b>Research-Ready:</b> Built 2014–2024 inter-regional steel-flow dataset; IO matrices & RAS balancing.</div>
+          <div class="bullet"><b>Quant Skills:</b> Regression, CLV, market simulation; Python/Excel data cleaning + viz.</div>
+          <div class="bullet"><b>Execution:</b> RA work validated by faculty; paper accepted to CONF-BPS 2024; AFTEM 2024 abstract.</div>
+        </div>
 
         <div class="section card">
           <h2>Education</h2>
           <div><b>University of Toronto</b>, Toronto, Canada</div>
           <div>Bachelor of Arts in Economics &amp; Mathematics (Minor in Statistics) — Sep 2024 – Jun 2028 (Expected)</div>
           <div class="muted" style="margin-top:6px">Core Coursework (Completed): Microeconomics · Macroeconomics · Calculus I & II · Introduction to Statistics & Data Science</div>
-          <div class="muted">Future Coursework: Computer Science (programming foundations) · Advanced Statistics · Upper-level Economics & Mathematics</div>
+          <div class="muted">Future Coursework: Programming Foundations (CS) · Advanced Statistics · Upper-level Economics & Mathematics</div>
           <div class="muted" style="margin-top:6px">Academic Interests: Empirical Research · Quantitative Modeling · Industrial Organization · Economic History</div>
         </div>
 
         <div id="research" class="section card">
           <h2>Research Experience</h2>
-          <h3>Research Assistant — Prof. Yao Luo, Department of Economics, University of Toronto <span class="muted">Feb 2025 – May 2025</span></h3>
-          <div class="muted" style="margin-top:-2px">Project: “Geography of Market Power in China’s Steel Industry”</div>
+          <h3>Research Assistant — Prof. Yao Luo, Dept. of Economics, University of Toronto <span class="muted">Feb 2025 – May 2025</span></h3>
           <ul>
-            <li>Constructed a <b>2014–2024 inter-regional steel-flow dataset</b> using publicly available Chinese industrial data (China Metallurgical News, Mysteel, China Steel News Network).</li>
-            <li>Cleaned and standardized 1,000+ data points to build <b>six-region input–output matrices</b> (East, North, Central-South, Northeast, Southwest, Northwest China).</li>
-            <li>Applied <b>RAS-balancing</b> and proportional allocation to ensure supply–demand consistency; visualized trade intensity and market power with <b>Excel / Python</b>.</li>
-            <li>Received final confirmation from Prof. Luo.</li>
+            <li>Constructed a <b>2014–2024 steel-flow dataset</b> from public Chinese industrial sources (China Metallurgical News, Mysteel, China Steel News Network).</li>
+            <li>Cleaned 1,000+ data points; built <b>six-region input–output matrices</b> and applied <b>RAS-balancing</b>.</li>
+            <li>Visualized trade intensity & market power with <b>Excel</b> and <b>Python</b> (heat maps & trend charts).</li>
+            <li>Progress validated weekly; final confirmation received from Prof. Luo.</li>
           </ul>
 
           <h3 style="margin-top:14px">Marketing Analytics Research — Haas School of Business, UC Berkeley <span class="muted">Jul 2023 – Aug 2023</span></h3>
           <ul>
             <li>Demand modeling & financial forecasting under Prof. Przemyslaw Jeziorski.</li>
-            <li>Applied linear regression and <b>Customer Lifetime Value (CLV)</b> analysis for ad & pricing strategies.</li>
-            <li>Co-authored paper “Can-Grab: New Strategies for Chinese Food Delivery Apps”, accepted by <b>CONF-BPS 2024</b> (CPCI/Crossref/CNKI/Google Scholar indexed).</li>
+            <li>Applied linear regression and <b>Customer Lifetime Value (CLV)</b> to evaluate ad & pricing strategies.</li>
+            <li>Co-authored “Can-Grab: New Strategies for Chinese Food Delivery Apps,” accepted by <b>CONF-BPS 2024</b> (CPCI/Crossref/CNKI/Google Scholar).</li>
           </ul>
 
           <h3 style="margin-top:14px">Economics of Marketing Strategy Seminar — Cornell University &amp; Path Academics <span class="muted">Jan 2024 – Feb 2024</span></h3>
@@ -137,9 +139,9 @@
           <h2>Professional Experience</h2>
           <h3>CITIC Securities Sichuan Branch — Business Development Department <span class="muted">Jun 2025 – Jul 2025</span></h3>
           <ul>
-            <li>Supported client outreach and regional business development.</li>
-            <li>Conducted market/competitor research to inform sales strategy and client profiling.</li>
-            <li>Prepared marketing materials and coordinated investor presentation events.</li>
+            <li>Supported client outreach & regional business development.</li>
+            <li>Conducted market and competitor research to inform sales strategy & client profiling.</li>
+            <li>Prepared marketing materials; coordinated investor presentation events.</li>
           </ul>
         </div>
 
@@ -158,7 +160,7 @@
           <div class="columns">
             <div><b>Languages:</b> Mandarin (Native) · English (Fluent, IELTS 6.5) · French (Basic)</div>
             <div><b>Technical:</b> Excel · Python · PowerPoint · R (Basic) · WPS Office</div>
-            <div><b>Econometrics &amp; Data:</b> Linear Regression · CLV Model · Demand Estimation · Market Simulation · Input–Output Analysis</div>
+            <div><b>Econometrics &amp; Data:</b> Linear Regression · CLV · Demand Estimation · Market Simulation · Input–Output Analysis</div>
             <div><b>Professional:</b> Research Design · Data Visualization · Academic Writing · Public Speaking · Cross-Cultural Collaboration</div>
           </div>
         </div>
@@ -168,137 +170,87 @@
           <ul>
             <li>Research paper accepted by <b>CONF-BPS 2024</b> (CPCI & Crossref indexed).</li>
             <li>Abstract accepted by <b>AFTEM 2024</b> (Cornell-affiliated international conference).</li>
-            <li>Built first 10-year regional steel-flow dataset for Prof. Luo’s project on China’s industrial geography.</li>
-            <li>Leadership experience integrating academic research, business practice, and student initiatives in China and Canada.</li>
+            <li>Built a 10-year regional steel-flow dataset for UofT project on industrial geography.</li>
           </ul>
         </div>
 
-        <div id="contact" class="section card">
-          <h2>Contact</h2>
-          <div class="kv">
+        <!-- Full Resume block (same content, condensed & ready to copy) -->
+        <div id="fullresume" class="section card">
+          <h2>Full Resume</h2>
+          <div class="kv" style="margin-bottom:8px">
             <b>TONG ZHOU</b>
             <span>Toronto · Global Mobility</span>
             <a href="mailto:tong.zhou.offer@gmail.com">tong.zhou.offer@gmail.com</a>
             <span>China: (+86)182-8445-0969</span>
             <span>Canada: (+1)647-717-8624</span>
-            <span class="muted">LinkedIn / Personal Website (coming soon)</span>
+            <span class="muted">[LinkedIn] / [Personal Website]</span>
           </div>
-        </div>
+          <div class="muted" style="margin-bottom:12px">B.A. in Economics & Mathematics (Minor in Statistics), University of Toronto, Class of 2028</div>
 
-        <!-- ===================== NEW SECTION 1: FULL RESUME ===================== -->
-        <div id="fullresume" class="section card">
-          <h2>Full Resume (Detailed Version)</h2>
-
-          <h3>Education</h3>
+          <h3>EDUCATION</h3>
           <div><b>University of Toronto</b>, Toronto, Canada</div>
-          <div>B.A. in Economics &amp; Mathematics (Minor in Statistics) — Sep 2024 – Jun 2028 (Expected)</div>
-          <div class="muted" style="margin-top:6px">Core Coursework: Microeconomics · Macroeconomics · Calculus I & II · Intro to Statistics & Data Science</div>
+          <div>Bachelor of Arts in Economics &amp; Mathematics (Minor in Statistics) — <i>Sep 2024 – Jun 2028 (Expected)</i></div>
+          <div class="muted">Core Coursework: Microeconomics · Macroeconomics · Calculus I & II · Intro to Statistics & Data Science</div>
           <div class="muted">Future Coursework: Programming Foundations (CS) · Advanced Statistics · Upper-level Economics & Mathematics</div>
-          <div class="muted">Academic Interests: Empirical Research · Quantitative Modeling · Industrial Organization · Economic History</div>
+          <div class="muted">Academic Interests: Empirical Research · Quantitative Modeling · IO · Economic History</div>
 
-          <h3 style="margin-top:16px">Research Experience</h3>
+          <h3 style="margin-top:12px">RESEARCH EXPERIENCE</h3>
+          <p><b>Research Assistant</b>, Prof. Yao Luo — Department of Economics, University of Toronto <span class="muted">Feb 2025 – May 2025</span></p>
           <ul>
-            <li><b>Research Assistant</b>, Prof. Yao Luo — Dept. of Economics, U of T <span class="muted">Feb 2025 – May 2025</span>
-              <ul>
-                <li>Constructed a 2014–2024 inter-regional steel-flow dataset from public Chinese industrial data (China Metallurgical News, Mysteel, China Steel News Network).</li>
-                <li>Built six-region input–output matrices; applied RAS-balancing and proportional allocation to ensure consistency.</li>
-                <li>Visualized trade intensity & market power using Excel and Python (heat maps, trend charts).</li>
-                <li>Progress validated weekly; final confirmation from Prof. Luo.</li>
-              </ul>
-            </li>
-            <li><b>Marketing Analytics Research</b>, Haas School of Business, UC Berkeley <span class="muted">Jul 2023 – Aug 2023</span>
-              <ul>
-                <li>Demand modeling & financial forecasting under Prof. Przemyslaw Jeziorski.</li>
-                <li>Linear regression & CLV to evaluate advertising and pricing strategies.</li>
-                <li>Co-authored “Can-Grab” paper accepted by CONF-BPS 2024 (CPCI/Crossref/CNKI/Google Scholar).</li>
-              </ul>
-            </li>
-            <li><b>Economics of Marketing Strategy Seminar</b>, Cornell University &amp; Path Academics <span class="muted">Jan 2024 – Feb 2024</span>
-              <ul>
-                <li>Strategic pricing & empirical modeling with Prof. Jura Liaukonyte; led the team’s final presentation on Apple’s strategy.</li>
-                <li>Abstract accepted by AFTEM 2024; commended by Academic Chair Edison Yan.</li>
-              </ul>
-            </li>
+            <li>Constructed 2014–2024 inter-regional steel-flow dataset from public Chinese industrial sources.</li>
+            <li>Standardized 1,000+ data points; built six-region IO matrices; applied RAS-balancing & proportional allocation.</li>
+            <li>Visualized trade intensity & market power with Excel/Python (heat maps & trend charts).</li>
+            <li>Progress reviewed weekly; final confirmation from Prof. Luo.</li>
+          </ul>
+          <p><b>Marketing Analytics Research</b>, Haas School of Business, UC Berkeley <span class="muted">Jul 2023 – Aug 2023</span></p>
+          <ul>
+            <li>Demand modeling & financial forecasting under Prof. Przemyslaw Jeziorski.</li>
+            <li>Regression & CLV to evaluate advertising/pricing strategies for food-delivery platforms.</li>
+            <li>Co-authored “Can-Grab” paper accepted by CONF-BPS 2024 (CPCI/Crossref/CNKI/Google Scholar).</li>
+          </ul>
+          <p><b>Economics of Marketing Strategy Seminar</b>, Cornell University & Path Academics <span class="muted">Jan 2024 – Feb 2024</span></p>
+          <ul>
+            <li>Strategic pricing & empirical modeling with Prof. Jura Liaukonyte; led team’s final presentation on Apple.</li>
+            <li>Abstract accepted by AFTEM 2024; commended by Academic Chair Edison Yan.</li>
           </ul>
 
-          <h3>Professional Experience</h3>
+          <h3>PROFESSIONAL EXPERIENCE</h3>
+          <p><b>CITIC Securities Sichuan Branch — Business Development Department</b> <span class="muted">Jun 2025 – Jul 2025</span></p>
           <ul>
-            <li><b>CITIC Securities Sichuan Branch — Business Development Dept.</b> <span class="muted">Jun 2025 – Jul 2025</span>
-              <ul>
-                <li>Supported client outreach & regional BD; conducted market/competitor research.</li>
-                <li>Prepared marketing materials; coordinated investor presentation events.</li>
-              </ul>
-            </li>
+            <li>Supported client outreach & regional BD; market/competitor research; prepared marketing materials.</li>
+            <li>Coordinated investor presentation events; improved sales collateral.</li>
           </ul>
 
-          <h3>Skills</h3>
+          <h3>LEADERSHIP & CAMPUS ENGAGEMENT</h3>
+          <ul>
+            <li><b>HR & Event Host</b>, UofT CSSA <span class="muted">Mar 2025 – Present</span> — Organized the 2025 UofT Shanghai Pre-Departure Orientation (200+ participants).</li>
+            <li><b>Founder & Lead Vocalist</b>, “Nonsense” Band <span class="muted">Nov 2024 – Present</span> — Planned and executed two on-campus concerts.</li>
+            <li><b>Student Council Member</b>, Golden Apple Jincheng No. 1 High School <span class="muted">2020 – 2023</span> — Directed academic & cultural programs.</li>
+          </ul>
+
+          <h3>SKILLS</h3>
           <div class="columns">
             <div><b>Languages:</b> Mandarin (Native) · English (Fluent, IELTS 6.5) · French (Basic)</div>
             <div><b>Technical:</b> Excel · Python · PowerPoint · R (Basic) · WPS Office</div>
-            <div><b>Econometrics &amp; Data:</b> Linear Regression · CLV · Demand Estimation · Market Simulation · Input–Output Analysis</div>
+            <div><b>Econometrics & Data:</b> Linear Regression · CLV · Demand Estimation · Market Simulation · Input–Output Analysis</div>
             <div><b>Professional:</b> Research Design · Data Visualization · Academic Writing · Public Speaking · Cross-Cultural Collaboration</div>
           </div>
 
-          <h3>Selected Highlights</h3>
+          <h3>SELECTED HIGHLIGHTS</h3>
           <ul>
             <li>CONF-BPS 2024 paper accepted (CPCI & Crossref indexed).</li>
-            <li>AFTEM 2024 abstract accepted.</li>
-            <li>Built first comprehensive 10-year regional steel-flow dataset for U of T project.</li>
+            <li>AFTEM 2024 abstract accepted (Cornell-affiliated conference).</li>
+            <li>First comprehensive 10-year regional steel-flow dataset for UofT project.</li>
           </ul>
 
-          <h3>References</h3>
-          <div class="muted">Available upon request — Prof. Przemyslaw Jeziorski (UC Berkeley) · Prof. Jura Liaukonyte (Cornell University) · Mr. Edison Yan (Path Academics)</div>
-        </div>
-
-        <!-- ===================== NEW SECTION 2: WEBSITE DESIGN PLAN ===================== -->
-        <div id="designplan" class="section card">
-          <h2>Website Design Plan</h2>
-
-          <h3>Ⅰ. Purpose & Positioning</h3>
-          <table>
-            <tr><th>主要目的</th><td><b>综合用途（学术+求职+展示）</b>：教授看学术，HR看经历，都能匹配。</td></tr>
-            <tr><th>希望访客行为</th><td><b>主动联系我</b>：比仅下载简历更强，说明已被说服。</td></tr>
-            <tr><th>网站印象</th><td><b>专业、理性</b>：科研/雇主最信任的气质。</td></tr>
-            <tr><th>网站类型</th><td><b>综合展示主页</b>：一屏传达学术与实务实力。</td></tr>
-            <tr><th>搜索关键词</th><td><b>“周瞳 UofT Economics Research”</b>：serious researcher + 国际身份。</td></tr>
-          </table>
-
-          <h3 style="margin-top:16px">Ⅱ. 受众与访问体验</h3>
-          <table>
-            <tr><th>主要访客</th><td>教授、HR、校友 <b>都包括</b>。</td></tr>
-            <tr><th>大陆访问</th><td><b>两个版本</b>（国内镜像 + 海外版），保证秒开。</td></tr>
-            <tr><th>页面语言</th><td>EN/中文双语切换，浏览器自动识别偏好。</td></tr>
-            <tr><th>打开感受</th><td><b>有设计感但不浮夸</b>，效率优先。</td></tr>
-            <tr><th>移动端体验</th><td><b>完美适配手机</b>（HR经常手机点链接）。</td></tr>
-          </table>
-
-          <h3 style="margin-top:16px">Ⅲ. 视觉风格与内容量</h3>
-          <table>
-            <tr><th>风格偏好</th><td><b>高级灰蓝金融感</b>：稳、聪明、有力量。</td></tr>
-            <tr><th>首页长度</th><td><b>两屏左右</b>：简介+经历+项目，密度高、效率好。</td></tr>
-            <tr><th>包含版块</th><td><b>自介 / 经历 / 技能</b>（直击HR判断逻辑）。</td></tr>
-            <tr><th>页面交互</th><td><b>语言切换与跳转</b>，简洁不花哨。</td></tr>
-            <tr><th>简历整合</th><td><b>在线阅读 + PDF下载</b> 两种都要。</td></tr>
-          </table>
-
-          <h3 style="margin-top:16px">Ⅳ. 技术与维护</h3>
-          <table>
-            <tr><th>更新方式</th><td><b>模板可填表更新</b>，不耗时间写代码。</td></tr>
-            <tr><th>技术框架</th><td><b>Next.js / React</b>（现代、快、SEO 友好）。</td></tr>
-            <tr><th>托管</th><td><b>Vercel + Gitee</b>：海外与国内都流畅。</td></tr>
-            <tr><th>分析功能</th><td><b>点击/下载统计</b>，便于后续 follow-up。</td></tr>
-            <tr><th>未来拓展</th><td><b>更新 Research Notes / Blog</b>，展现持续产出。</td></tr>
-          </table>
+          <div class="muted" style="margin-top:8px"><b>References</b> available upon request — Prof. Przemyslaw Jeziorski (UC Berkeley) · Prof. Jura Liaukonyte (Cornell) · Mr. Edison Yan (Path Academics)</div>
         </div>
 
       </section>
     </section>
   </main>
 
-  <footer class="container muted" style="padding:30px 0">
-    © <span id="y"></span> Tong Zhou • Single-file site for quick deploy
-  </footer>
+  <footer class="container muted" style="padding:30px 0">© <span id="y"></span> Tong Zhou • Single-file site for quick deploy</footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
